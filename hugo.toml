@@ -4,6 +4,10 @@ title = "Zhuo's Website"
 
 theme = "hugo_paper"
 
-[[params.socialIcons]]
-name = "email"
-url = "mailto:zhuoz4@illinois.edu"
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
