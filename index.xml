@@ -6,14 +6,18 @@
     <description>Recent content on Zhuo&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Dec 2023 11:43:50 -0600</lastBuildDate><atom:link href="https://zhuolovesmath57.github.io/my_website/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Dec 2023 11:43:50 -0600</lastBuildDate><atom:link href="https://zhuolovesmath57.github.io/my_website/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test</title>
       <link>https://zhuolovesmath57.github.io/my_website/posts/test/</link>
-      <pubDate>Sun, 17 Dec 2023 11:43:50 -0600</pubDate>
+      <pubDate>Sat, 16 Dec 2023 11:43:50 -0600</pubDate>
       
       <guid>https://zhuolovesmath57.github.io/my_website/posts/test/</guid>
-      <description>First post Hello! I&amp;rsquo;m Zhuo.</description>
+      <description>Hello! I&amp;rsquo;m Zhuo.
+Consider $v\in M_n(\mathbb{R})$. Then $\gamma(t)=I+tv$ is a curve in $GL_n(\mathbb{R})$, for $t$ small, with $\gamma(0)=I$. Then $\dot\gamma(0)=v$. It follows that
+$$ \begin{aligned} T_IF(v)=(F\circ\gamma)^\boldsymbol{\cdot}(0)&amp;amp;=\frac{d}{dt}\bigg|_0(I+tv)^\mathsf{T}(I+tv) \newline &amp;amp;=\frac{d}{dt}\bigg|_0(I+t(v^\mathsf{T}+v)+t^2v^\mathsf{T}v) \newline &amp;amp;=v^\mathsf{T}+v. \end{aligned} $$
+hi
+Since $\operatorname{Sym}^2(\mathbb{R}^n)$ is a vector space, its tangent space can be identified with itself. For every $B\in\operatorname{Sym}^2(\mathbb{R}^n)$, one can write $$ B=\frac{1}{2}(B^\mathsf{T}+B). $$ Hence, $T_IF$ is onto.</description>
     </item>
     
   </channel>

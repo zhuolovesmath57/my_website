@@ -51,7 +51,11 @@
   
   
   
-  <meta name="description" content="First post Hello! I&rsquo;m Zhuo." />
+  <meta name="description" content="Hello! I&rsquo;m Zhuo.
+Consider $v\in M_n(\mathbb{R})$. Then $\gamma(t)=I&#43;tv$ is a curve in $GL_n(\mathbb{R})$, for $t$ small, with $\gamma(0)=I$. Then $\dot\gamma(0)=v$. It follows that
+$$ \begin{aligned} T_IF(v)=(F\circ\gamma)^\boldsymbol{\cdot}(0)&amp;=\frac{d}{dt}\bigg|_0(I&#43;tv)^\mathsf{T}(I&#43;tv) \newline &amp;=\frac{d}{dt}\bigg|_0(I&#43;t(v^\mathsf{T}&#43;v)&#43;t^2v^\mathsf{T}v) \newline &amp;=v^\mathsf{T}&#43;v. \end{aligned} $$
+hi
+Since $\operatorname{Sym}^2(\mathbb{R}^n)$ is a vector space, its tangent space can be identified with itself. For every $B\in\operatorname{Sym}^2(\mathbb{R}^n)$, one can write $$ B=\frac{1}{2}(B^\mathsf{T}&#43;B). $$ Hence, $T_IF$ is onto." />
   <meta name="author" content="Zhuo&#39;s Website" />
   
 
@@ -92,6 +96,43 @@
   
   
   
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () =>
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+          ],
+          
+          throwOnError : false
+        })
+    );
+</script>
+
+  
+  
+  
 
   
   <link rel="icon" href="https://zhuolovesmath57.github.io/my_website/favicon.ico" />
@@ -100,28 +141,77 @@
   
   <meta name="generator" content="Hugo 0.110.0">
 
+
+
+  
+
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+
+
+
+
   
   
   
   
   
   <meta itemprop="name" content="Test">
-<meta itemprop="description" content="First post Hello! I&rsquo;m Zhuo."><meta itemprop="datePublished" content="2023-12-17T11:43:50-06:00" />
-<meta itemprop="dateModified" content="2023-12-17T11:43:50-06:00" />
-<meta itemprop="wordCount" content="5">
+<meta itemprop="description" content="Hello! I&rsquo;m Zhuo.
+Consider $v\in M_n(\mathbb{R})$. Then $\gamma(t)=I&#43;tv$ is a curve in $GL_n(\mathbb{R})$, for $t$ small, with $\gamma(0)=I$. Then $\dot\gamma(0)=v$. It follows that
+$$ \begin{aligned} T_IF(v)=(F\circ\gamma)^\boldsymbol{\cdot}(0)&amp;=\frac{d}{dt}\bigg|_0(I&#43;tv)^\mathsf{T}(I&#43;tv) \newline &amp;=\frac{d}{dt}\bigg|_0(I&#43;t(v^\mathsf{T}&#43;v)&#43;t^2v^\mathsf{T}v) \newline &amp;=v^\mathsf{T}&#43;v. \end{aligned} $$
+hi
+Since $\operatorname{Sym}^2(\mathbb{R}^n)$ is a vector space, its tangent space can be identified with itself. For every $B\in\operatorname{Sym}^2(\mathbb{R}^n)$, one can write $$ B=\frac{1}{2}(B^\mathsf{T}&#43;B). $$ Hence, $T_IF$ is onto."><meta itemprop="datePublished" content="2023-12-16T11:43:50-06:00" />
+<meta itemprop="dateModified" content="2023-12-16T11:43:50-06:00" />
+<meta itemprop="wordCount" content="60">
 <meta itemprop="keywords" content="" />
   
   <meta property="og:title" content="Test" />
-<meta property="og:description" content="First post Hello! I&rsquo;m Zhuo." />
+<meta property="og:description" content="Hello! I&rsquo;m Zhuo.
+Consider $v\in M_n(\mathbb{R})$. Then $\gamma(t)=I&#43;tv$ is a curve in $GL_n(\mathbb{R})$, for $t$ small, with $\gamma(0)=I$. Then $\dot\gamma(0)=v$. It follows that
+$$ \begin{aligned} T_IF(v)=(F\circ\gamma)^\boldsymbol{\cdot}(0)&amp;=\frac{d}{dt}\bigg|_0(I&#43;tv)^\mathsf{T}(I&#43;tv) \newline &amp;=\frac{d}{dt}\bigg|_0(I&#43;t(v^\mathsf{T}&#43;v)&#43;t^2v^\mathsf{T}v) \newline &amp;=v^\mathsf{T}&#43;v. \end{aligned} $$
+hi
+Since $\operatorname{Sym}^2(\mathbb{R}^n)$ is a vector space, its tangent space can be identified with itself. For every $B\in\operatorname{Sym}^2(\mathbb{R}^n)$, one can write $$ B=\frac{1}{2}(B^\mathsf{T}&#43;B). $$ Hence, $T_IF$ is onto." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://zhuolovesmath57.github.io/my_website/posts/test/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-12-17T11:43:50-06:00" />
-<meta property="article:modified_time" content="2023-12-17T11:43:50-06:00" />
+<meta property="article:published_time" content="2023-12-16T11:43:50-06:00" />
+<meta property="article:modified_time" content="2023-12-16T11:43:50-06:00" />
 
   
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Test"/>
-<meta name="twitter:description" content="First post Hello! I&rsquo;m Zhuo."/>
+<meta name="twitter:description" content="Hello! I&rsquo;m Zhuo.
+Consider $v\in M_n(\mathbb{R})$. Then $\gamma(t)=I&#43;tv$ is a curve in $GL_n(\mathbb{R})$, for $t$ small, with $\gamma(0)=I$. Then $\dot\gamma(0)=v$. It follows that
+$$ \begin{aligned} T_IF(v)=(F\circ\gamma)^\boldsymbol{\cdot}(0)&amp;=\frac{d}{dt}\bigg|_0(I&#43;tv)^\mathsf{T}(I&#43;tv) \newline &amp;=\frac{d}{dt}\bigg|_0(I&#43;t(v^\mathsf{T}&#43;v)&#43;t^2v^\mathsf{T}v) \newline &amp;=v^\mathsf{T}&#43;v. \end{aligned} $$
+hi
+Since $\operatorname{Sym}^2(\mathbb{R}^n)$ is a vector space, its tangent space can be identified with itself. For every $B\in\operatorname{Sym}^2(\mathbb{R}^n)$, one can write $$ B=\frac{1}{2}(B^\mathsf{T}&#43;B). $$ Hence, $T_IF$ is onto."/>
 
   
   
@@ -220,7 +310,7 @@
     
     <div class="text-sm antialiased opacity-60">
       
-      <time>Dec 17, 2023</time>
+      <time>Dec 16, 2023</time>
       
       
       
@@ -229,8 +319,23 @@
     
   </header>
 
-  <section><h1 id="first-post">First post</h1>
-<p>Hello! I&rsquo;m Zhuo.</p>
+  <section><p>Hello! I&rsquo;m Zhuo.</p>
+<p>Consider $v\in M_n(\mathbb{R})$. Then $\gamma(t)=I+tv$ is a curve in $GL_n(\mathbb{R})$, for $t$ small, with $\gamma(0)=I$. Then $\dot\gamma(0)=v$. It follows that</p>
+<p>$$
+\begin{aligned}
+T_IF(v)=(F\circ\gamma)^\boldsymbol{\cdot}(0)&amp;=\frac{d}{dt}\bigg|_0(I+tv)^\mathsf{T}(I+tv)
+\newline
+&amp;=\frac{d}{dt}\bigg|_0(I+t(v^\mathsf{T}+v)+t^2v^\mathsf{T}v)
+\newline
+&amp;=v^\mathsf{T}+v.
+\end{aligned}
+$$</p>
+<p>hi</p>
+<p>Since $\operatorname{Sym}^2(\mathbb{R}^n)$ is a vector space, its tangent space can be identified with itself. For every $B\in\operatorname{Sym}^2(\mathbb{R}^n)$, one can write
+$$
+B=\frac{1}{2}(B^\mathsf{T}+B).
+$$
+Hence, $T_IF$ is onto.</p>
 </section>
 
   
