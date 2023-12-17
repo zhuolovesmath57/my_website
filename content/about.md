@@ -8,7 +8,9 @@ draft = false
 math = true
 +++
 
-I'm Zhuo Zhang, a third year undergraduate studying math at the [University of Illinois, Urbana Champaign](https://math.illinois.edu/). I am broadly interested in many areas of math, including analysis, geometry, etc. However, I am particularly interested in number theory and topology.
+I'm Zhuo Zhang, a third year undergraduate studying math at the [University of Illinois, Urbana Champaign](https://math.illinois.edu/). Here is my [CV](../content/pdf/My_CV.pdf).
+
+I am broadly interested in many areas of math, including analysis, geometry, etc. However, I am particularly interested in number theory and topology.
 
 This is my personal website, where I will record and organize some of my mathematical stuffs.
 $$

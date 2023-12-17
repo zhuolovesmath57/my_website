@@ -6,8 +6,14 @@ theme = "hugo_paper"
 
 [menu]
 
-  [[menu.main]]
+    [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
     weight = 10
+
+    [[menu.main]]
+        identifier = "notes"
+        name = "Notes"
+        url = "/notes/"
+        weight = 20
