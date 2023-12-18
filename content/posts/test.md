@@ -1,6 +1,6 @@
 +++
-title = 'Test'
-date = 2023-12-09T11:43:50-06:00
+title = 'Test Post'
+date = 2023-12-17
 draft = false
 math = true
 +++
