@@ -11,7 +11,7 @@ math = true
 
 
 <center>
-<img src="/my_website/images/chicago.jpg" alt="chiago" style="zoom:40%;" />
+<img src="/my_website/images/chicago.jpg" alt="chiago" style="width:40%;" />
 </center>
 
 Hello. I'm Zhuo Zhang, a third year undergraduate studying math at the [University of Illinois, Urbana Champaign](https://math.illinois.edu/). Here is my [CV](/my_website/pdf/My_CV.pdf).
