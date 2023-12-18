@@ -9,7 +9,7 @@ theme = "hugo_paper"
 
   avatar = "/my_website/images/squirrel.jpg"
   name = 'Zhuo'
-  bio = 'A good guy'
+  bio = 'A good squirrel.'
 
 [markup.goldmark.renderer]
   unsafe = true # Allow HTML in md files
