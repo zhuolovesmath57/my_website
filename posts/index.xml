@@ -6,11 +6,21 @@
     <description>Recent content in Posts on Zhuo&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Dec 2023 11:43:50 -0600</lastBuildDate><atom:link href="https://zhuolovesmath57.github.io/my_website/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Dec 2023 00:29:31 -0600</lastBuildDate><atom:link href="https://zhuolovesmath57.github.io/my_website/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test</title>
+      <title>Milnor&#39;s Proof of the Fundamental Theorem of Algebra</title>
+      <link>https://zhuolovesmath57.github.io/my_website/posts/milnor-proof-ftoa/</link>
+      <pubDate>Mon, 18 Dec 2023 00:29:31 -0600</pubDate>
+      
+      <guid>https://zhuolovesmath57.github.io/my_website/posts/milnor-proof-ftoa/</guid>
+      <description>I came across the following interesting proof of the fundamental theorem of algebra. The argument is due to Milnor and can be found in his book Topology from the Differentiable Viewpoint. The proof uses differential topology and some very elementary complex analysis. In particular, it does not use Liouville&amp;rsquo;s theorem, which is one of the most common ways to prove the fundamental theorem of algebra.
+$\boldsymbol{\sf Theorem\textsf{ (Fundamental Theorem of Algebra)}.</description>
+    </item>
+    
+    <item>
+      <title>Test Post</title>
       <link>https://zhuolovesmath57.github.io/my_website/posts/test/</link>
-      <pubDate>Sat, 09 Dec 2023 11:43:50 -0600</pubDate>
+      <pubDate>Sun, 17 Dec 2023 00:00:00 +0000</pubDate>
       
       <guid>https://zhuolovesmath57.github.io/my_website/posts/test/</guid>
       <description>Hello! I&amp;rsquo;m Zhuo. This is a test post. $$ \left(\frac{p}{q}\right)\left(\frac{q}{p}\right)=(-1)^{\frac{p-1}{2}\frac{q-1}{2}}. $$</description>
