@@ -4,16 +4,25 @@ title = "Zhuo's Website"
 
 theme = "hugo_paper"
 
+[markup.goldmark.renderer]
+  unsafe = true # Allow HTML in md files
+
 [menu]
 
-    [[menu.main]]
+  [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
     weight = 10
 
-    [[menu.main]]
-        identifier = "notes"
-        name = "Notes"
-        url = "/notes/"
-        weight = 20
+  [[menu.main]]
+    identifier = "notes"
+    name = "Notes"
+    url = "/notes/"
+    weight = 20
+  
+  [[menu.main]]
+    identifier = "favorites"
+    name = "Favorites"
+    url = "/favorites/"
+    weight = 30

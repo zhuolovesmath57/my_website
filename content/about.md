@@ -7,6 +7,16 @@ author = "Zhuo Zhang"
 draft = false
 math = true
 +++
+<!-- <img src="https://rezk.web.illinois.edu/charles-in-prague.jpg" alt="Standard" style="zoom:24%;" /> -->
+
+
+<center>
+<img src="/my_website/images/chicago.jpg" alt="chiago" style="zoom:40%;" />
+</center>
+
+
+
+
 
 I'm Zhuo Zhang, a third year undergraduate studying math at the [University of Illinois, Urbana Champaign](https://math.illinois.edu/). Here is my [CV](/my_website/pdf/My_CV.pdf).
 
