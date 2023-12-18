@@ -4,6 +4,13 @@ title = "Zhuo's Website"
 
 theme = "hugo_paper"
 
+[params]
+  color = 'linen'
+
+  avatar = "/my_website/images/squirrel.jpg"
+  name = 'Zhuo'
+  bio = 'A good guy'
+
 [markup.goldmark.renderer]
   unsafe = true # Allow HTML in md files
 

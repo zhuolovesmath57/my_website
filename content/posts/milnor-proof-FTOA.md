@@ -1,7 +1,7 @@
 +++
 title = "Milnor's Proof of the Fundamental Theorem of Algebra"
 date = 2023-12-18T00:29:31-06:00
-draft = false
+draft = true
 math = true
 +++
 
