@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://zhuolovesmath57.github.io/my_website/posts/milnor-proof-ftoa/</loc>
-    <lastmod>2023-12-18T00:29:31-06:00</lastmod>
-  </url><url>
-    <loc>https://zhuolovesmath57.github.io/my_website/posts/</loc>
-    <lastmod>2023-12-18T00:29:31-06:00</lastmod>
-  </url><url>
-    <loc>https://zhuolovesmath57.github.io/my_website/</loc>
-    <lastmod>2023-12-18T00:29:31-06:00</lastmod>
-  </url><url>
     <loc>https://zhuolovesmath57.github.io/my_website/about/</loc>
     <lastmod>2023-12-17T00:00:00+00:00</lastmod>
   </url><url>
@@ -20,7 +11,13 @@
     <loc>https://zhuolovesmath57.github.io/my_website/notes/</loc>
     <lastmod>2023-12-17T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://zhuolovesmath57.github.io/my_website/posts/</loc>
+    <lastmod>2023-12-17T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://zhuolovesmath57.github.io/my_website/posts/test/</loc>
+    <lastmod>2023-12-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zhuolovesmath57.github.io/my_website/</loc>
     <lastmod>2023-12-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zhuolovesmath57.github.io/my_website/categories/</loc>
