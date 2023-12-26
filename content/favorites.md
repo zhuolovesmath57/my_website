@@ -9,7 +9,7 @@ math = true
 +++
 
 <center>
-<img src="/my_website/images/beethoven.jpeg" alt="beethoven" style="width:40%;" />
+<img src="/my_website/images/beethoven.jpeg" alt="beethoven" style="width:35%;" />
 To play a wrong note is insignificant;
 </br>
 to play without passion is inexcusable.
@@ -19,7 +19,7 @@ to play without passion is inexcusable.
 </br>
 
 <center>
-<img src="/my_website/images/david-hilbert.jpeg" alt="hilbert" style="width:60%;" />
+<img src="/my_website/images/david-hilbert.jpeg" alt="hilbert" style="width:50%;" />
 We must know. We will know.
 </center>
 <p style="text-align: right;"> -- David Hilbert</p>
