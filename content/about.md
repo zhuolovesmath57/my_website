@@ -7,8 +7,6 @@ author = "Zhuo Zhang"
 draft = false
 math = true
 +++
-<!-- <img src="https://rezk.web.illinois.edu/charles-in-prague.jpg" alt="Standard" style="zoom:24%;" /> -->
-
 
 <center>
 <img src="/my_website/images/chicago.jpg" alt="chiago" style="width:50%;" />
@@ -18,4 +16,4 @@ Hello, I'm Zhuo Zhang, a third year undergraduate student studying math at the [
 
 I am broadly interested in many areas of math, but I am particularly interested in number theory and topology.
 
-This is my personal website, where I will record and organize some of my mathematical stuffs. I will share my notes, which I hope you find helpful. I would also like to share my thoughts on other non-academic things, say, life and music. 
+This is my personal website, where I will record and organize some of my mathematical stuffs. I will share my notes and other writings, which you can access by following the various links on the top of the webpage. I hope you will find them useful. I would also like to share my thoughts on other non-academic things, say, music. 
