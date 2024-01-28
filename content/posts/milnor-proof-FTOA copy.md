@@ -11,7 +11,7 @@ The following interesting theorem is sometimes called "Milnor's exercise." Of co
 $$
 p(f)=f(x),\quad \forall f\in\mathcal F,
 $$
-i.e., $p=\mathrm{ev}_{x}$, the evaluation map at $x$, for a unique $x\in X$.
+i.e., $p=\mathrm{ev}_{x}$, the evaluation map at for a unique $x\in X$.
 
 *Proof*. Consider the assignment $\theta:M\to \mathcal F^*$ given by $\theta(x)=\mathrm{ev}_{x}$. We need to show that $\theta$ is a bijection. Clearly $\theta$ is injective, for if $x\ne y$, then there exists $f\in C^{\infty}(M)$ such that $f(x)\ne f(y)$. It remains to show that $\theta$ is surjective.
 	
