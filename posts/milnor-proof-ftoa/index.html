@@ -28,6 +28,8 @@
 
 
 
+
+
 <html
   class="not-ready lg:text-base"
   style="--bg: #faf8f1"
@@ -53,7 +55,7 @@
   
   <meta name="description" content="I came across the following interesting proof of the fundamental theorem of algebra. The argument is due to Milnor and can be found in his book Topology from the Differentiable Viewpoint. The proof uses differential topology and some very elementary complex analysis. In particular, it does not use Liouville&rsquo;s theorem, which is one of the most common ways to prove the fundamental theorem of algebra.
 $\boldsymbol{\sf Theorem\textsf{ (Fundamental Theorem of Algebra)}." />
-  <meta name="author" content="Zhuo&#39;s Website" />
+  <meta name="author" content="Zhuo" />
   
 
   
@@ -74,6 +76,8 @@ $\boldsymbol{\sf Theorem\textsf{ (Fundamental Theorem of Algebra)}." />
   
   
   
+  
+  <link rel="preload" as="image" href="/my_website/images/squirrel.jpg" />
   
   
 
@@ -312,7 +316,7 @@ whence $|p(z)| \to \infty$ as $|z| \to \infty$. This implies that $p$ extends to
 <p>For any $c \in \mathbb{C}$, $p^{-1}(c)$ consists of the zeros of the polynomial $p(z)-c$ and so it contains at most $n$ points. Let $k=k(c)$ be the number of points in $p^{-1}(c)$. Suppose $c$ is a regular value and $p^{-1}(c)=\{z_1, \ldots, z_k\}$. By the inverse function theorem, there are disjoint open balls $B_i$ containing $z_i$ such that $p|_{B_i}:B_i\to p(B_i)$ are diffeomorphisms. Since $f$ is closed, the set $G=f(\mathbb{R}^2-\left(B_1 \cup \cdots \cup B_k\right))$ is closed, and $c\notin G$. Hence, there is an open neighborhood $V$ containing $c$ that is disjoint from $G$. Then $f^{-1}(V)\subseteq B_1\cup\cdots\cup B_k$. Let $W_i=(f|_{B_i})^{-1}(V)$. Then $f|_{W_i}:W_i\to V$ are diffeomorphisms, and $p^{-1}(V)=\coprod_{i=1}^kW_i$.</p>
 <p>It follows that $k(c)$ is locally constant on the set $\mathbb{R}^2\setminus F$ of regular values. Since $\mathbb{R}^2\setminus F$ is connected, $k(c)$ is constant on $\mathbb{R}^2-F$. This constant cannot be zero since that would imply that the image of $p$ is $F$, and hence that $p$ is constant since $F$ is disconnected, but $p$ is not constant. This shows that  the image of $p$ contains $\left(\mathbb{R}^2\setminus F\right) \cup F=\mathbb{R}^2$, so that $p$ takes on all values of $\mathbb{C}$, including 0.</p>
 <div style="float: right; width: 0.8em; height: 0.8em; border: 0.4em solid black; position: relative; top: -2.5em"></div>
-<p><span style="color:#eb861c">$\boldsymbol{\sf Remark.}$</span>	There are other arguments with a similar flavor of this one. For example, a proper map $f:M\to N$ between smooth manifolds of the same dimension induces a map on the top-degree compactly supported de Rham cohomology $f^*:H_c^\mathrm{top}(N)\to H_c^\mathrm{top}(M)$. Using this data we may define the degree of a proper map, which is a real number. It is a nontrivial fact that degree is an integer, and the proof uses a very similar construction as the one given above!</p>
+<p><span style="color:#eb861c">$\boldsymbol{\sf Remark.}$</span>	There are other arguments with a flavor similar to this one. For example, a proper map $f:M\to N$ between smooth manifolds of the same dimension induces a map on the top-degree compactly supported de Rham cohomology $f^*:H_c^\mathrm{top}(N)\to H_c^\mathrm{top}(M)$. Using this data we may define the degree of a proper map, which is a real number. It is a nontrivial fact that degree is an integer, and the proof uses a very similar construction as the one given above!</p>
 </section>
 
   
@@ -323,6 +327,12 @@ whence $|p(z)| \to \infty$ as $|z| \to \infty$. This implies that $p$ extends to
   
   
   <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    <a
+      class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://zhuolovesmath57.github.io/my_website/posts/milnor-proof-ftoa-copy/"
+      ><span class="mr-1.5">←</span><span>Milnor&#39;s Exercise</span></a
+    >
     
     
     <a
@@ -352,7 +362,7 @@ whence $|p(z)| \to \infty$ as $|z| \to \infty$. This implies that $p$ extends to
   class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
 >
   <div class="mr-auto">
-    &copy; 2023
+    &copy; 2024
     <a class="link" href="https://zhuolovesmath57.github.io/my_website/">Zhuo&#39;s Website</a>
   </div>
   <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
