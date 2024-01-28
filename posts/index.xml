@@ -9,10 +9,10 @@
     <lastBuildDate>Sat, 27 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://zhuolovesmath57.github.io/my_website/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Milnor&#39;s Exercise</title>
-      <link>https://zhuolovesmath57.github.io/my_website/posts/milnor-proof-ftoa-copy/</link>
+      <link>https://zhuolovesmath57.github.io/my_website/posts/milnor-exercise/</link>
       <pubDate>Sat, 27 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://zhuolovesmath57.github.io/my_website/posts/milnor-proof-ftoa-copy/</guid>
+      <guid>https://zhuolovesmath57.github.io/my_website/posts/milnor-exercise/</guid>
       <description>The following interesting theorem is sometimes called &amp;ldquo;Milnor&amp;rsquo;s exercise.&amp;rdquo; Of couse, Milnor did not provide a solution himself, and it seems that the result was first proved by Pursell.
 $\boldsymbol{\sf Theorem\textsf{}.}$	Let $M$ be a smooth manifold (with or without boundary). Suppose $\mathcal{F}=C^{\infty}(M)$ is the $\mathbb{R}$-algebra of smooth real-valued functions on $M$. Then for any $\mathbb{R}$-algebra homomorphism $p:\mathcal F\to\mathbb{R}$, there exists a unique $x\in X$ such that $$ p(f)=f(x),\quad \forall f\in\mathcal F, $$ i.</description>
     </item>
