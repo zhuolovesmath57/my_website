@@ -5,7 +5,7 @@ draft = false
 math = true
 +++
 
-The following interesting theorem is sometimes called "Milnor's exercise." Of couse, Milnor did not provide a solution himself, and it seems that the result was first proved by Pursell.
+The following interesting theorem is sometimes called "Milnor's exercise." This was indeed an exercise in the book *Characteristic Classes* by Milnor and Stasheff, exercise 1-C. Of couse, Milnor did not provide a solution himself, and it seems that the result was first proved by Pursell.
 
 <span style="color:blue">$\boldsymbol{\sf Theorem\textsf{}.}$</span>	Let $M$ be a smooth manifold (with or without boundary). Suppose $\mathcal{F}=C^{\infty}(M)$ is the $\mathbb{R}$-algebra of smooth real-valued functions on $M$. Then for any $\mathbb{R}$-algebra homomorphism $p:\mathcal F\to\mathbb{R}$, there exists a unique $x\in X$ such that
 $$
