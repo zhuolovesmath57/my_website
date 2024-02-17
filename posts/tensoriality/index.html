@@ -1,0 +1,439 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en-us"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Tensoriality - Zhuo&#39;s Website</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  <meta name="description" content="We introduce an important concept called tensoriality, which you may also recognize as $C^{\infty}(M)$-linearity. It is a very common argument in tensor analysis. I have made this note as self-contained as possible.
+$\boldsymbol{\sf Definition\textsf{}.}$	Let $V$ be a finite dimensional real vector space. We define $$ T^{(k,l)}V:=\underbrace{V\otimes\cdots\otimes V}_k\otimes \underbrace{V^\ast\otimes\cdots\otimes V^\ast}_{l}. $$ Similarly, if $E\to M$ is a vector bundle, we define $$ T^{(k,l)}E:=\underbrace{E\otimes\cdots\otimes E}_k\otimes \underbrace{E^\ast\otimes\cdots\otimes E^\ast}_{l}. $$
+$\boldsymbol{\sf Definition\textsf{}.}$	A tensor field on a manifold $M$ is a section of $T^{(k,l)}TM$ for some $(k,l)$." />
+  <meta name="author" content="Zhuo" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://zhuolovesmath57.github.io/my_website/main.min.css" />
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://zhuolovesmath57.github.io/my_website/theme.png" />
+
+  
+  
+  
+  
+  <link rel="preload" as="image" href="/my_website/images/squirrel.jpg" />
+  
+  
+
+  
+  
+  
+
+  
+  
+  <script
+    defer
+    src="https://zhuolovesmath57.github.io/my_website/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+
+  
+  <link rel="icon" href="https://zhuolovesmath57.github.io/my_website/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://zhuolovesmath57.github.io/my_website/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.110.0">
+
+
+
+  
+
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <meta itemprop="name" content="Tensoriality">
+<meta itemprop="description" content="We introduce an important concept called tensoriality, which you may also recognize as $C^{\infty}(M)$-linearity. It is a very common argument in tensor analysis. I have made this note as self-contained as possible.
+$\boldsymbol{\sf Definition\textsf{}.}$	Let $V$ be a finite dimensional real vector space. We define $$ T^{(k,l)}V:=\underbrace{V\otimes\cdots\otimes V}_k\otimes \underbrace{V^\ast\otimes\cdots\otimes V^\ast}_{l}. $$ Similarly, if $E\to M$ is a vector bundle, we define $$ T^{(k,l)}E:=\underbrace{E\otimes\cdots\otimes E}_k\otimes \underbrace{E^\ast\otimes\cdots\otimes E^\ast}_{l}. $$
+$\boldsymbol{\sf Definition\textsf{}.}$	A tensor field on a manifold $M$ is a section of $T^{(k,l)}TM$ for some $(k,l)$."><meta itemprop="datePublished" content="2024-02-17T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2024-02-17T00:00:00+00:00" />
+<meta itemprop="wordCount" content="749">
+<meta itemprop="keywords" content="" />
+  
+  <meta property="og:title" content="Tensoriality" />
+<meta property="og:description" content="We introduce an important concept called tensoriality, which you may also recognize as $C^{\infty}(M)$-linearity. It is a very common argument in tensor analysis. I have made this note as self-contained as possible.
+$\boldsymbol{\sf Definition\textsf{}.}$	Let $V$ be a finite dimensional real vector space. We define $$ T^{(k,l)}V:=\underbrace{V\otimes\cdots\otimes V}_k\otimes \underbrace{V^\ast\otimes\cdots\otimes V^\ast}_{l}. $$ Similarly, if $E\to M$ is a vector bundle, we define $$ T^{(k,l)}E:=\underbrace{E\otimes\cdots\otimes E}_k\otimes \underbrace{E^\ast\otimes\cdots\otimes E^\ast}_{l}. $$
+$\boldsymbol{\sf Definition\textsf{}.}$	A tensor field on a manifold $M$ is a section of $T^{(k,l)}TM$ for some $(k,l)$." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zhuolovesmath57.github.io/my_website/posts/tensoriality/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-02-17T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-02-17T00:00:00+00:00" />
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Tensoriality"/>
+<meta name="twitter:description" content="We introduce an important concept called tensoriality, which you may also recognize as $C^{\infty}(M)$-linearity. It is a very common argument in tensor analysis. I have made this note as self-contained as possible.
+$\boldsymbol{\sf Definition\textsf{}.}$	Let $V$ be a finite dimensional real vector space. We define $$ T^{(k,l)}V:=\underbrace{V\otimes\cdots\otimes V}_k\otimes \underbrace{V^\ast\otimes\cdots\otimes V^\ast}_{l}. $$ Similarly, if $E\to M$ is a vector bundle, we define $$ T^{(k,l)}E:=\underbrace{E\otimes\cdots\otimes E}_k\otimes \underbrace{E^\ast\otimes\cdots\otimes E^\ast}_{l}. $$
+$\boldsymbol{\sf Definition\textsf{}.}$	A tensor field on a manifold $M$ is a section of $T^{(k,l)}TM$ for some $(k,l)$."/>
+
+  
+  
+  
+  <link rel="canonical" href="https://zhuolovesmath57.github.io/my_website/posts/tensoriality/" />
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      href="https://zhuolovesmath57.github.io/my_website/"
+      >Zhuo&#39;s Website</a
+    >
+    <div
+      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/my_website/about/"
+        >About</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/my_website/notes/"
+        >Notes</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/my_website/favorites/"
+        >Favorites</a
+      >
+      
+    </nav>
+    
+
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">Tensoriality</h1>
+
+    
+    <div class="text-sm antialiased opacity-60">
+      
+      <time>Feb 17, 2024</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><p>We introduce an important concept called tensoriality, which you may also recognize as $C^{\infty}(M)$-linearity. It is a very common argument in tensor analysis. I have made this note as self-contained as possible.</p>
+<p><span style="color:green">$\boldsymbol{\sf Definition\textsf{}.}$</span>	Let $V$ be a finite dimensional real vector space. We define
+$$
+T^{(k,l)}V:=\underbrace{V\otimes\cdots\otimes V}_k\otimes \underbrace{V^\ast\otimes\cdots\otimes V^\ast}_{l}.
+$$
+Similarly, if $E\to M$ is a vector bundle, we define
+$$
+T^{(k,l)}E:=\underbrace{E\otimes\cdots\otimes E}_k\otimes \underbrace{E^\ast\otimes\cdots\otimes E^\ast}_{l}.
+$$</p>
+<p><span style="color:green">$\boldsymbol{\sf Definition\textsf{}.}$</span>	A tensor field on a manifold $M$ is a section of $T^{(k,l)}TM$ for some $(k,l)$.</p>
+<p><span style="color:#eb861c">$\boldsymbol{\sf Remark.}$</span>	A $(k,l)$-tensor on $V$ can take in $k$ covectors and $l$ vectors and output a number. Similarly, a $(k,l)$-tensor field on $M$ can take in $k$ covector fields and $l$ vector fields and output a function.</p>
+<p><span style="color:blue">$\boldsymbol{\sf{Proposition\textsf{}.}}$</span>	Let $A$ be a rough $(k,l)$-tensor field on $M$. Then TFAE.</p>
+<ol>
+<li>
+<p>$A:M\to T^{(k,l)}TM$ is smooth;</p>
+</li>
+<li>
+<p>for any $\omega_1,\ldots,\omega_k\in \Gamma(M,T^\ast M)\approx \mathcal{T}^1M$, and $X_1,\ldots,X_l\in\Gamma(M,TM)\approx \mathfrak{X}(M)$, the function
+$$
+A(\omega_1,\ldots,\omega_k,X_1,\ldots,X_l):M\to\mathbb{R}
+$$
+is smooth.</p>
+</li>
+</ol>
+<p>This proposition shows that $A$ determines a map (which we still denote by $A$):
+$$
+A: \underbrace{\mathcal{T}^1(M) \times \cdots \times \mathcal{T}^1(M)}_{k} \times \underbrace{\mathfrak{X}(M) \times \cdots \times \mathfrak{X}(M)}_{l} \rightarrow C^{\infty}(M).
+$$
+Clearly this map is $C^{\infty}(M)$-linear, where the LHS is considered as a $C^{\infty}(M)$-module. We have the following important theorem.</p>
+<p><span style="color:blue">$\boldsymbol{\sf Theorem\textsf{ (Tensor Characterization Lemma)}.}$</span>	Any $C^{\infty}(M)$ map
+$$
+A: \underbrace{\mathcal{T}^1(M) \times \cdots \times \mathcal{T}^1(M)}_{k} \times \underbrace{\mathfrak{X}(M) \times \cdots \times \mathfrak{X}(M)}_{l} \rightarrow C^{\infty}(M)
+$$
+is induced by a unique smooth $(k, l)$-tensor field.</p>
+<blockquote>
+<p>Because of this result, it is common to use the same symbol for both a tensor field and the multilinear map on sections that it defines, and to refer to either of these objects as a tensor field.</p>
+</blockquote>
+<p><em>Proof</em>. This is similar to the proof of the Serre-Swan theorem.</p>
+<p><span style="color:#c90076">$\boldsymbol{\sf{Step~1}\textsf{}}$</span>	We first show that $A$ acts <em>locally</em>, i.e., the value of $A(\omega_1,\ldots,\omega_k,X_1,\ldots,X_l)$ at $p$ only depends on the values of $\omega_i$ and $X_j$ in a neighborhood of $p$.</p>
+<p>We prove this for $X_1$. The other cases are just the same. By linearity, we can consider the difference of two (co)vector fields. Hence, it suffices to assume that $X_1=0$ in a neighborhood $U$ of $p$. Choose a bump function $\tau$ with $\tau(p)=1$ and $\operatorname{supp}\tau\subseteq U$. Then $\tau X_1=0$ on $M$. Therefore,
+$$
+0=A(\omega_1,\ldots,\omega_k,\tau X_1,\ldots,X_l)(p)=\tau(p)A(\omega_1,\ldots,\omega_k,X_1,\ldots,X_l)(p).
+$$
+It follows that $A(\omega_1,\ldots,\omega_k,X_1,\ldots,X_l)(p)=0$.</p>
+<p><span style="color:#c90076">$\boldsymbol{\sf{Step~2}\textsf{}}$</span>	We now show that $A$ acts <em>pointwise</em>, i.e., the value of $A(\omega_1,\ldots,\omega_k,X_1,\ldots,X_l)$ at $p$ only depends on the values of $\omega_i$ and $X_j$ at the single point $p$.</p>
+<p>We prove this for $X_1$. The other cases are just the same. Suppose $X_1(p)=0$. Choose a chart $U$ around $p$, and write $X_1$ in $U$ as
+$$
+X_1=\sum_{i=1}^mf_i \frac{\partial }{\partial x_i},
+$$
+where $f_i\in C^{\infty}(U)$. We know that $f_i(p)=0$ because $X_1(p)=0$. By choosing bump functions again, we may extend $f_i$ to $\tilde f_i\in C^{\infty}(M)$ and $\frac{\partial }{\partial x_i}$ to $V_i\in \mathfrak{X}(M)$ such that $f_i,\tilde f_i$ and $\frac{\partial }{\partial x_i},V_i$ both agree in a neighborhood of $p$. In particular, $\tilde f_i(p)=f_i(p)=0$. Let $Y=\sum_i\tilde f_i V_i$. Then $Y\in\mathfrak{X}(M)$ and $Y$ agrees $X_1$ in a neighborhood of $p$. Since $A$ is local and is $C^{\infty}(M)$-linear, we have
+$$
+A(\omega_1,\ldots,\omega_k,X_1,\ldots,X_l)(p)=A(\omega_1,\ldots,\omega_k,Y,\ldots,X_l)(p)
+$$
+$$
+=\sum_{i=1}^m\tilde f_i(p)A(\omega_1,\ldots,\omega_k,V_i,\ldots,X_l)(p)=0.
+$$
+It follows by linearity that $A(\omega_1,\ldots,\omega_k,X_1,\ldots,X_l)(p)$ depends only on the value of $\omega_i$ and $X_j$ at $p$.</p>
+<p><span style="color:#c90076">$\boldsymbol{\sf{Step~3}\textsf{}}$</span>	Now we define a rough tensor field $\tilde A: M \rightarrow T^{(k,l)} T M$ by
+$$
+\tilde A_p\left(h_1, \ldots, h_k,v_1, \ldots, v_l\right)=A\left(\omega_1,\ldots,\omega_k,V_1, \ldots, V_l\right)(p)
+$$
+for $p \in M$, $h_i\in T^\ast_pM$, and $v_j\in T_pM$, where $\omega_i$ and $V_j$ are any smooth global (co)vector fields on $M$ satisfying $\omega_1(p)=h_i$ and $V_j(p)=v_j$. Step 2 shows that this is well defined, and the resulting tensor field is smooth by the preceding proposition. Clearly $\tilde A$ induces the multilinear map $A$ as above. Finally, The tensor field $\tilde A$ is unique, for if $\tilde A$ were to induce $A$, then $\tilde A$ has to satisfy the above equation.</p>
+<div style="float: right; width: 0.8em; height: 0.8em; border: 0.4em solid black; position: relative; top: -2.5em"></div>
+<p><span style="color:#eb861c">$\boldsymbol{\sf Remark.}$</span>	The theorem has many variants, all of which describe the relation between tensoriality and $C^{\infty}(M)$-linearity. The tensor fields are from the manifold to the mixed tangent and cotangent bundles. These can certainly be replaced by arbitrary vector bundles. The codomain of the linear map is $C^{\infty}(M)$, which can be replaced by sections of a possibly different vector bundle.</p>
+<p>In other words, we have the following general theorem.</p>
+<p><span style="color:blue">$\boldsymbol{\sf Theorem\textsf{}.}$</span>	Let $E_i,F_j,G$ be vector bundles over $M$. Any $C^{\infty}(M)$-linear map of the form
+$$
+A:\Gamma(M,E_1^\ast)\times\cdots\Gamma(M,E_k^\ast)\times\Gamma(M,F_1)\times\cdots\Gamma(M,F_l)\to\Gamma(M,G)
+$$
+must be induced by a unique section of the bundle
+$$
+E_1\otimes\cdots\otimes E_k\otimes F_1^\ast\otimes\cdots\otimes F_l^\ast\otimes G
+$$
+over $M$.</p>
+<p><em>Proof</em>. Exactly the same argument, almost verbatim.</p>
+<div style="float: right; width: 0.8em; height: 0.8em; border: 0.4em solid black; position: relative; top: -2.5em"></div>
+</section>
+
+  
+  
+
+  
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    
+    <a
+      class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://zhuolovesmath57.github.io/my_website/posts/milnor-exercise/"
+      ><span>Milnor&#39;s Exercise</span><span class="ml-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2024
+    <a class="link" href="https://zhuolovesmath57.github.io/my_website/">Zhuo&#39;s Website</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >✎ Paper</a
+  >
+</footer>
+
+  </body>
+</html>

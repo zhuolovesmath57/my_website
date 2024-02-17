@@ -6,14 +6,25 @@
     <description>Recent content in Posts on Zhuo&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://zhuolovesmath57.github.io/my_website/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://zhuolovesmath57.github.io/my_website/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tensoriality</title>
+      <link>https://zhuolovesmath57.github.io/my_website/posts/tensoriality/</link>
+      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhuolovesmath57.github.io/my_website/posts/tensoriality/</guid>
+      <description>We introduce an important concept called tensoriality, which you may also recognize as $C^{\infty}(M)$-linearity. It is a very common argument in tensor analysis. I have made this note as self-contained as possible.
+$\boldsymbol{\sf Definition\textsf{}.}$	Let $V$ be a finite dimensional real vector space. We define $$ T^{(k,l)}V:=\underbrace{V\otimes\cdots\otimes V}_k\otimes \underbrace{V^\ast\otimes\cdots\otimes V^\ast}_{l}. $$ Similarly, if $E\to M$ is a vector bundle, we define $$ T^{(k,l)}E:=\underbrace{E\otimes\cdots\otimes E}_k\otimes \underbrace{E^\ast\otimes\cdots\otimes E^\ast}_{l}. $$
+$\boldsymbol{\sf Definition\textsf{}.}$	A tensor field on a manifold $M$ is a section of $T^{(k,l)}TM$ for some $(k,l)$.</description>
+    </item>
+    
     <item>
       <title>Milnor&#39;s Exercise</title>
       <link>https://zhuolovesmath57.github.io/my_website/posts/milnor-exercise/</link>
       <pubDate>Sat, 27 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://zhuolovesmath57.github.io/my_website/posts/milnor-exercise/</guid>
-      <description>The following interesting theorem is sometimes called &amp;ldquo;Milnor&amp;rsquo;s exercise.&amp;rdquo; This was indeed an exercise in the book Characteristic Classes by Milnor and Stasheff, exercise 1-C. Of couse, Milnor did not provide a solution himself, and it seems that the result was first proved by Pursell.
+      <description>The following interesting theorem is sometimes called &amp;ldquo;Milnor&amp;rsquo;s exercise.&amp;rdquo; This was indeed an exercise in the book Characteristic Classes by Milnor and Stasheff, exercise 1-C. Of course, Milnor did not provide a solution himself, and it seems that the result was first proved by Pursell.
 $\boldsymbol{\sf Theorem\textsf{}.}$	Let $M$ be a smooth manifold (with or without boundary). Suppose $\mathcal{F}=C^{\infty}(M)$ is the $\mathbb{R}$-algebra of smooth real-valued functions on $M$. Then for any $\mathbb{R}$-algebra homomorphism $p:\mathcal F\to\mathbb{R}$, there exists a unique $x\in X$ such that $$ p(f)=f(x),\quad \forall f\in\mathcal F, $$ i.</description>
     </item>
     
