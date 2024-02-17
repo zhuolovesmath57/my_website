@@ -5,7 +5,7 @@ draft = false
 math = true
 +++
 
-The following interesting theorem is sometimes called "Milnor's exercise." This was indeed an exercise in the book *Characteristic Classes* by Milnor and Stasheff, exercise 1-C. Of couse, Milnor did not provide a solution himself, and it seems that the result was first proved by Pursell.
+The following interesting theorem is sometimes called "Milnor's exercise." This was indeed an exercise in the book *Characteristic Classes* by Milnor and Stasheff, exercise 1-C. Of course, Milnor did not provide a solution himself, and it seems that the result was first proved by Pursell.
 
 <span style="color:blue">$\boldsymbol{\sf Theorem\textsf{}.}$</span>	Let $M$ be a smooth manifold (with or without boundary). Suppose $\mathcal{F}=C^{\infty}(M)$ is the $\mathbb{R}$-algebra of smooth real-valued functions on $M$. Then for any $\mathbb{R}$-algebra homomorphism $p:\mathcal F\to\mathbb{R}$, there exists a unique $x\in X$ such that
 $$
@@ -19,7 +19,7 @@ Suppose $p: \mathcal{F} \rightarrow \mathbb{R}$ is an $\mathbb{R}$-algebra homom
 $$
 M_a=\\{x \in M \mid f_a(x) \neq p(f_a)\\}
 $$
-are open in $M$, and $a\in M_a$. The sets $\{M_a:a\in L\}$ constitute an open covering of $L$. Since $L$ is compact, we can choose a finite subcovering $M_{a_1}, \ldots, M_{a_m}$. Consider the function
+are open in $M$, and $a\in M_a$. The sets $\\{M_a:a\in L\\}$ constitute an open covering of $L$. Since $L$ is compact, we can choose a finite subcovering $M_{a_1}, \ldots, M_{a_m}$. Consider the function
 $$
 g=(f-p(f))^2+\sum_{i=1}^m\left(f_{a_i}-p\left(f_{a_i}\right)\right)^2 .
 $$
