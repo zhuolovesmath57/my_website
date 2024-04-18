@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Zhuo&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://zhuolovesmath57.github.io/my_website/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://zhuolovesmath57.github.io/my_website/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Localization of smooth functions</title>
+      <link>https://zhuolovesmath57.github.io/my_website/posts/localization/</link>
+      <pubDate>Wed, 17 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhuolovesmath57.github.io/my_website/posts/localization/</guid>
+      <description>In this note we prove a rather surprising fact: the ring of smooth functions on an open subset $U$ of a manifold $M$ is the same as localizing the ring of smooth functions on $M$ at the multiplicative system of smooth functions that do not vanish on $U$. As far as I know, this is a known result, but I couldn&amp;rsquo;t find it any literature that rigorously proves this fact, so I decided to write it down myself.</description>
+    </item>
+    
     <item>
       <title>Tensoriality</title>
       <link>https://zhuolovesmath57.github.io/my_website/posts/tensoriality/</link>

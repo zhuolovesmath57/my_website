@@ -1,0 +1,402 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en-us"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Localization of smooth functions - Zhuo&#39;s Website</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  <meta name="description" content="In this note we prove a rather surprising fact: the ring of smooth functions on an open subset $U$ of a manifold $M$ is the same as localizing the ring of smooth functions on $M$ at the multiplicative system of smooth functions that do not vanish on $U$. As far as I know, this is a known result, but I couldn&rsquo;t find it any literature that rigorously proves this fact, so I decided to write it down myself." />
+  <meta name="author" content="Zhuo" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://zhuolovesmath57.github.io/my_website/main.min.css" />
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://zhuolovesmath57.github.io/my_website/theme.png" />
+
+  
+  
+  
+  
+  <link rel="preload" as="image" href="/my_website/images/squirrel.jpg" />
+  
+  
+
+  
+  
+  
+
+  
+  
+  <script
+    defer
+    src="https://zhuolovesmath57.github.io/my_website/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+
+  
+  <link rel="icon" href="https://zhuolovesmath57.github.io/my_website/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://zhuolovesmath57.github.io/my_website/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.110.0">
+
+
+
+  
+
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <meta itemprop="name" content="Localization of smooth functions">
+<meta itemprop="description" content="In this note we prove a rather surprising fact: the ring of smooth functions on an open subset $U$ of a manifold $M$ is the same as localizing the ring of smooth functions on $M$ at the multiplicative system of smooth functions that do not vanish on $U$. As far as I know, this is a known result, but I couldn&rsquo;t find it any literature that rigorously proves this fact, so I decided to write it down myself."><meta itemprop="datePublished" content="2024-04-17T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2024-04-17T00:00:00+00:00" />
+<meta itemprop="wordCount" content="678">
+<meta itemprop="keywords" content="" />
+  
+  <meta property="og:title" content="Localization of smooth functions" />
+<meta property="og:description" content="In this note we prove a rather surprising fact: the ring of smooth functions on an open subset $U$ of a manifold $M$ is the same as localizing the ring of smooth functions on $M$ at the multiplicative system of smooth functions that do not vanish on $U$. As far as I know, this is a known result, but I couldn&rsquo;t find it any literature that rigorously proves this fact, so I decided to write it down myself." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zhuolovesmath57.github.io/my_website/posts/localization/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-04-17T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-04-17T00:00:00+00:00" />
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Localization of smooth functions"/>
+<meta name="twitter:description" content="In this note we prove a rather surprising fact: the ring of smooth functions on an open subset $U$ of a manifold $M$ is the same as localizing the ring of smooth functions on $M$ at the multiplicative system of smooth functions that do not vanish on $U$. As far as I know, this is a known result, but I couldn&rsquo;t find it any literature that rigorously proves this fact, so I decided to write it down myself."/>
+
+  
+  
+  
+  <link rel="canonical" href="https://zhuolovesmath57.github.io/my_website/posts/localization/" />
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      href="https://zhuolovesmath57.github.io/my_website/"
+      >Zhuo&#39;s Website</a
+    >
+    <div
+      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/my_website/about/"
+        >About</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/my_website/notes/"
+        >Notes</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/my_website/favorites/"
+        >Favorites</a
+      >
+      
+    </nav>
+    
+
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">Localization of smooth functions</h1>
+
+    
+    <div class="text-sm antialiased opacity-60">
+      
+      <time>Apr 17, 2024</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><p>In this note we prove a rather surprising fact: the ring of smooth functions on an open subset $U$ of a manifold $M$ is the same as localizing the ring of smooth functions on $M$ at the multiplicative system of smooth functions that do not vanish on $U$. As far as I know, this is a known result, but I couldn&rsquo;t find it any literature that rigorously proves this fact, so I decided to write it down myself.</p>
+<p>The following lemma deals with the most technical part of the proof.</p>
+<p><span style="color:blue">$\boldsymbol{\sf Lemma\textsf{}.}$</span>	Let $M$ be a manifold and $U\subset M$ be open. For every smooth function $f:U\to\mathbb{R}$, there exists smooth function $g:M\to[0,1]$ such that $g$ is strictly positive on $U$, vanishes outisde $U$, and the function
+$$
+fg(x)=\begin{cases}
+f(x)g(x)&amp;~x\in U,
+\
+0&amp;~x\notin U,
+\end{cases}
+$$
+is smooth on $M$.</p>
+<p><em>Proof</em>.</p>
+<p><span style="color:#c90076">$\boldsymbol{\sf{Step~1.}\textsf{}}$</span>	First suppose that $U\subset\mathbb{R}^n$.</p>
+<p>Cover $U$ by countably many balls $B(x_i,r_i)$ satisfying $\overline{B(x_i,2r_i)}\subset U$. For each $i$, choose a bump function $\psi_i$ such that $\psi_i=1$ on $\overline{B(x_i,r_i)}$ and $\operatorname{supp}\psi_i\subset B(x_i,2r_i)$. Then the function $\psi_if$ is well defined by extension to 0 outside $U$.</p>
+<p>Let $C_i&gt;0$ (resp. $D_i&gt;0$) be positive constants that bound the absolute values of all partial derivatives of $\psi_i$ (resp. $\psi_if$) up to order $i$ on $\overline{B(x_i,2r_i)}$, and hence on all of $\mathbb{R}^n$, since $\psi_i$ and $\psi_if$ are supported in $B(x_i,2r_i)$. Consider the function
+$$
+g(x)=\sum_{i=1}^\infty2^{-i}\frac{\psi_i(x)}{1+C_i+D_i}.
+$$
+Clearly $0&lt;g&lt;1$ on $U$ and $g=0$ outside $U$. To show that $g$ is smooth, let $\partial_k$ denote any $k$th partial derivative. Then
+$$
+2^{-i}\frac{\partial_k\psi_i}{1+C_i+D_i}&lt;2^{-i},
+$$
+provided that $i&gt;k$. Hence, the series of partial derivatives of $g$ converge uniformly, and so $g$ is smooth. A similar consideration shows that
+$$
+fg(x)=\sum_{i=1}^\infty2^{-i}\frac{\psi_if(x)}{1+C_i+D_i}
+$$
+is smooth on $\mathbb{R}^n$, as required.</p>
+<p><span style="color:#c90076">$\boldsymbol{\sf{Step~2.}\textsf{}}$</span>	Now, for the general case, suppose that $U\subset M$.</p>
+<p>Cover $M$ by coordinate balls ${B_\alpha}$, each of which is diffeomorphic to $\mathbb{R}^n$. Note that the conclusion in step 1 remains trivially true if $U$ is empty. For each $\alpha$, $U\cap B_\alpha$ is an open subset of $B_\alpha$ (possibly empty). The function $f:U\cap B_\alpha\to\mathbb{R}$ is smooth, and so by step 1 there exists a smooth function $g_\alpha:B_\alpha\to[0,1]$ such that $0&lt;g_\alpha&lt;1$ on $U\cap B_\alpha$, $g_\alpha=0$ on $B_\alpha\setminus U$, and $g_\alpha f$ is smooth on $B_\alpha$. Choose a partition of unity ${\psi_\alpha}$ on $M$ subordinate to the open cover ${B_\alpha}$. Then the function
+$$
+g=\sum_\alpha\psi_\alpha g_\alpha
+$$
+is smooth on $M$. We argue that $0&lt;g&lt;1$ on $U$ and $g=0$ outside $U$. To see this, note first that each $g_\alpha$ satisfies $0\le g_\alpha\le1$, and so any convex linear combination of values of $g_\alpha$ must also lie in $[0,1]$. Furthermore, for all $x\in U$, there is at least one $\alpha_0$ for which $x\in U\cap B_{\alpha_0}$, whence $g_{\alpha_0}(x)&gt;0$. Finally, if $x\notin U$, then $g_\alpha(x)=0$ for all $\alpha$, whence $g(x)=0$.</p>
+<p>It remains to check that $gf$ is smooth on $M$. Indeed, we have
+$$
+gf=\sum_\alpha\psi_\alpha\cdot(g_\alpha f),
+$$
+where $g_\alpha f$ is smooth on $B_\alpha$. But since $\operatorname{supp}\psi_\alpha\subset B_\alpha$, the functions $\psi_\alpha\cdot(g_\alpha f)$ are well defined and smooth on $M$. Since ${\psi_\alpha}$ is a partition of unity, $gf$ is also smooth on $M$.</p>
+<div style="float: right; width: 0.7em; height: 0.7em; border: 0.35em solid black; position: relative; top: -2.1em"></div>
+<p><span style="color:blue">$\boldsymbol{\sf Theorem\textsf{}.}$</span>	Let $M$ be a manifold and $U\subset M$ be open. Let $S\subset C^{\infty}(M)$ be the subset consisting of all smooth functions on $M$ that do not vanish anywhere on $U$. Then $C^{\infty}(U)\cong S^{-1}C^{\infty}(M)$.</p>
+<p><em>Proof</em>. Consider the restriction map $\rho:C^{\infty}(M)\to C^{\infty}(U)$. Clearly $\rho$ sends $S$ to units in $C^{\infty}(U)$, so $\rho$ induces a unique map $\bar\rho: S^{-1}C^{\infty}(M)\to C^{\infty}(U)$. We claim that $\bar\rho$ is an isomorphism.</p>
+<p>Suppose that $\bar\rho\left(f / s\right)=0$. Then $f=0$ on $U$. Choose a characteristic function of $U$, i.e., a function $g\in C^{\infty}(M)$ such that $g^{-1}(0)=M\setminus U$.</p>
+<blockquote>
+<p>Note that this follows directly from the preceding lemma, but it didn&rsquo;t require its full strength. In fact, this is a known theorem due to Whitney: every closed subset of a manifold is the zero set of some smooth function.</p>
+</blockquote>
+<p>Hence, $g$ is nonzero on $U$ and is zero outside $U$. It follows that $g\in S$, and $fg=0$. Hence, $f/s=0$, so $\bar\rho$ is injective. The fact that $\bar\rho$ is surjective follows from the preceding lemma.</p>
+<div style="float: right; width: 0.7em; height: 0.7em; border: 0.35em solid black; position: relative; top: -2.1em"></div>
+</section>
+
+  
+  
+
+  
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    
+    <a
+      class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://zhuolovesmath57.github.io/my_website/posts/tensoriality/"
+      ><span>Tensoriality</span><span class="ml-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2024
+    <a class="link" href="https://zhuolovesmath57.github.io/my_website/">Zhuo&#39;s Website</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >✎ Paper</a
+  >
+</footer>
+
+  </body>
+</html>

@@ -6,7 +6,16 @@
     <description>Recent content on Zhuo&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://zhuolovesmath57.github.io/my_website/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://zhuolovesmath57.github.io/my_website/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Localization of smooth functions</title>
+      <link>https://zhuolovesmath57.github.io/my_website/posts/localization/</link>
+      <pubDate>Wed, 17 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhuolovesmath57.github.io/my_website/posts/localization/</guid>
+      <description>In this note we prove a rather surprising fact: the ring of smooth functions on an open subset $U$ of a manifold $M$ is the same as localizing the ring of smooth functions on $M$ at the multiplicative system of smooth functions that do not vanish on $U$. As far as I know, this is a known result, but I couldn&amp;rsquo;t find it any literature that rigorously proves this fact, so I decided to write it down myself.</description>
+    </item>
+    
     <item>
       <title>Tensoriality</title>
       <link>https://zhuolovesmath57.github.io/my_website/posts/tensoriality/</link>
@@ -46,7 +55,7 @@ $\boldsymbol{\sf Theorem\textsf{ (Fundamental Theorem of Algebra)}.</description
       <guid>https://zhuolovesmath57.github.io/my_website/about/</guid>
       <description>Hello, I&amp;rsquo;m Zhuo Zhang, a third year undergraduate student studying math at the University of Illinois, Urbana Champaign. Here is my CV.
 I am broadly interested in many areas of math, but I am particularly interested in number theory and topology.
-This is my personal website, where I will record and organize some of my mathematical stuffs. I will share my notes and other writings, which you can access by following the various links on the top of the webpage.</description>
+This is my personal website, where I will record and organize some of my mathematical stuffs. I will share my notes and other writings, which you can access by following the links on the top of the webpage.</description>
     </item>
     
     <item>
@@ -69,7 +78,7 @@ Only the mediocre are supremely confident of their ability. The better you are, 
       <description>Here I will post various notes or papers that I&amp;rsquo;ve written.
 (Link to come) Some notes on representation theory. This was created with four other participants of the ICLUE Summer 2022 program on representation theory and combinatorics.
 (Link to come) The paper I wrote at the Spring 2023 Honors Seminar at UIUC. The topic is a special class of primes and their primitive roots.
-The expository paper I wrote in the UChicago Summer 2023 Math REU Program.</description>
+The expository paper I wrote at the UChicago Summer 2023 Math REU Program.</description>
     </item>
     
     <item>
