@@ -16,4 +16,4 @@ Hello, I'm Zhuo Zhang, a third year undergraduate student studying math at the [
 
 I am broadly interested in many areas of math, but I am particularly interested in number theory and topology.
 
-This is my personal website, where I will record and organize some of my mathematical stuffs. I will share my notes and other writings, which you can access by following the various links on the top of the webpage. I hope you will find them useful. I would also like to share my thoughts on other non-academic things, say, music. 
+This is my personal website, where I will record and organize some of my mathematical stuffs. I will share my notes and other writings, which you can access by following the links on the top of the webpage. I hope you will find them useful. I would also like to share my thoughts on other non-academic things, say, music. 
