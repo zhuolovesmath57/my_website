@@ -1,0 +1,372 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en-us"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Some thoughts on mathematics - Zhuo&#39;s Website</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  <meta name="description" content="I wrote this article because I was reading about algebraic number theory and I stumbled across a totally unexpectedly amazing conjecture: certain special values of the Riemann zeta function (at odd integers) are related to the higher $K$-groups from algebraic $K$-theory. $$ \zeta(2k-1)\equiv R_{2k}\bmod{\mathbb{Q}^*}. $$ These insights were summarized within the Beilinson conjecture.
+I was utterly impressed by this deep and profound connection between number theory and topology.
+Indeed, I had the incorrect belief that analytic number theory and algebraic topology are almost completely unrelated." />
+  <meta name="author" content="Zhuo" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://zhuolovesmath57.github.io/my_website/main.min.css" />
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://zhuolovesmath57.github.io/my_website/theme.png" />
+
+  
+  
+  
+  
+  <link rel="preload" as="image" href="/my_website/images/squirrel.jpg" />
+  
+  
+
+  
+  
+  
+
+  
+  
+  <script
+    defer
+    src="https://zhuolovesmath57.github.io/my_website/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+
+  
+  <link rel="icon" href="https://zhuolovesmath57.github.io/my_website/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://zhuolovesmath57.github.io/my_website/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.110.0">
+
+
+
+  
+
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <meta itemprop="name" content="Some thoughts on mathematics">
+<meta itemprop="description" content="I wrote this article because I was reading about algebraic number theory and I stumbled across a totally unexpectedly amazing conjecture: certain special values of the Riemann zeta function (at odd integers) are related to the higher $K$-groups from algebraic $K$-theory. $$ \zeta(2k-1)\equiv R_{2k}\bmod{\mathbb{Q}^*}. $$ These insights were summarized within the Beilinson conjecture.
+I was utterly impressed by this deep and profound connection between number theory and topology.
+Indeed, I had the incorrect belief that analytic number theory and algebraic topology are almost completely unrelated."><meta itemprop="datePublished" content="2024-05-15T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2024-05-15T00:00:00+00:00" />
+<meta itemprop="wordCount" content="279">
+<meta itemprop="keywords" content="" />
+  
+  <meta property="og:title" content="Some thoughts on mathematics" />
+<meta property="og:description" content="I wrote this article because I was reading about algebraic number theory and I stumbled across a totally unexpectedly amazing conjecture: certain special values of the Riemann zeta function (at odd integers) are related to the higher $K$-groups from algebraic $K$-theory. $$ \zeta(2k-1)\equiv R_{2k}\bmod{\mathbb{Q}^*}. $$ These insights were summarized within the Beilinson conjecture.
+I was utterly impressed by this deep and profound connection between number theory and topology.
+Indeed, I had the incorrect belief that analytic number theory and algebraic topology are almost completely unrelated." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zhuolovesmath57.github.io/my_website/posts/thoughts/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-05-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-05-15T00:00:00+00:00" />
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Some thoughts on mathematics"/>
+<meta name="twitter:description" content="I wrote this article because I was reading about algebraic number theory and I stumbled across a totally unexpectedly amazing conjecture: certain special values of the Riemann zeta function (at odd integers) are related to the higher $K$-groups from algebraic $K$-theory. $$ \zeta(2k-1)\equiv R_{2k}\bmod{\mathbb{Q}^*}. $$ These insights were summarized within the Beilinson conjecture.
+I was utterly impressed by this deep and profound connection between number theory and topology.
+Indeed, I had the incorrect belief that analytic number theory and algebraic topology are almost completely unrelated."/>
+
+  
+  
+  
+  <link rel="canonical" href="https://zhuolovesmath57.github.io/my_website/posts/thoughts/" />
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      href="https://zhuolovesmath57.github.io/my_website/"
+      >Zhuo&#39;s Website</a
+    >
+    <div
+      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/my_website/about/"
+        >About</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/my_website/notes/"
+        >Notes</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/my_website/favorites/"
+        >Favorites</a
+      >
+      
+    </nav>
+    
+
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">Some thoughts on mathematics</h1>
+
+    
+    <div class="text-sm antialiased opacity-60">
+      
+      <time>May 15, 2024</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><p>I wrote this article because I was reading about algebraic number theory and I stumbled across a totally unexpectedly amazing <a href="https://math.mit.edu/juvitop/old/notes/2015_Fall/NotesF6.pdf">conjecture</a>: certain special values of the Riemann zeta function (at odd integers) are related to the higher $K$-groups from algebraic $K$-theory.
+$$
+\zeta(2k-1)\equiv R_{2k}\bmod{\mathbb{Q}^*}.
+$$
+These insights were summarized within the Beilinson conjecture.</p>
+<p><em><strong>I was utterly impressed by this deep and profound connection between number theory and topology.</strong></em></p>
+<p>Indeed, I had the incorrect belief that analytic number theory and algebraic topology are almost completely unrelated. My reasoning was simple: Analytic number theory involves a lot of analysis: bounding error terms, manipulating sums and integrals, investigating zeros of meromorphic functions; on the other hand, algebraic topology has a completely different flavor; it involves lots of diagram chasing, investigating homotopy groups of spheres, and many many algebraic techniques&hellip; At first glance, they indeed have very little in common. However, as the conjecture suggests, there are an abundance of deep connections between the two areas.</p>
+<p>Currently the conjecture seems completely out of reach. I suspect that it would take decades for mathematicians to develop the tools to even approach the conjecture, due to the fact that this conjecture lies at the intersection of almost all areas of mathematics (analysis, topology, number theory, algebra &hellip;) and very few people can excel at all of them.</p>
+<p>While I am not able to fully understand, let alone prove, this conjecture, there is one lesson that we all need to learn from this. That is, any two areas of math are closely related. If we cannot see the connection, that is either because not enough math has been developed or because of our lack of imagination.</p>
+</section>
+
+  
+  
+
+  
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    
+    <a
+      class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://zhuolovesmath57.github.io/my_website/posts/localization/"
+      ><span>Localization of smooth functions</span><span class="ml-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2024
+    <a class="link" href="https://zhuolovesmath57.github.io/my_website/">Zhuo&#39;s Website</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >✎ Paper</a
+  >
+</footer>
+
+  </body>
+</html>

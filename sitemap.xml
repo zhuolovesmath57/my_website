@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://zhuolovesmath57.github.io/my_website/posts/localization/</loc>
-    <lastmod>2024-04-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://zhuolovesmath57.github.io/my_website/posts/</loc>
-    <lastmod>2024-04-17T00:00:00+00:00</lastmod>
+    <lastmod>2024-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zhuolovesmath57.github.io/my_website/posts/thoughts/</loc>
+    <lastmod>2024-05-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zhuolovesmath57.github.io/my_website/</loc>
+    <lastmod>2024-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zhuolovesmath57.github.io/my_website/posts/localization/</loc>
     <lastmod>2024-04-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zhuolovesmath57.github.io/my_website/posts/tensoriality/</loc>
