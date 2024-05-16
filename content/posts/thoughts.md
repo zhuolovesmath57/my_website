@@ -1,5 +1,5 @@
 +++
-title = 'Some thoughts on mathematics'
+title = 'Some thoughts on mathematics (the Beilinson conjecture)'
 date = 2024-05-15
 draft = false
 math = true
